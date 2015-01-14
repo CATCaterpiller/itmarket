@@ -16,7 +16,7 @@ ListBuy
 
  */
 public class Customer {
-    private long key;
+    private long code;
     private String login;
     private String password;
     private String name;
@@ -25,8 +25,8 @@ public class Customer {
 
     public Customer() {}
 
-    public Customer(int key, String login, String password, String name) {
-        this.key = key;
+    public Customer(long code, String login, String password, String name) {
+        this.code = code;
         this.login = login;
         this.password = password;
         this.name = name;
@@ -39,11 +39,11 @@ public class Customer {
 
 
 
-    public long getKey() {
-        return key;
+    public long getCode() {
+        return code;
     }
-    public void setKey(long key) {
-        this.key = key;
+    public void setCode(long code) {
+        this.code = code;
     }
     public String getLogin() {
         return login;

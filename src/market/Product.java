@@ -12,7 +12,7 @@ amt - number of goods
  */
 
 public class Product {
-    private int code;
+    private long code;
     private String name;
     private double price;
     private int amt;
@@ -21,11 +21,11 @@ public class Product {
 
     public Product() {}
 
-    public Product(int code) {
+    public Product(long code) {
         this.code = code;
     }
 
-    public Product(int code, String name, double prise, int amt) {
+    public Product(long code, String name, double prise, int amt) {
         this.code = code;
         this.amt = amt;
         this.name = name;
@@ -52,11 +52,11 @@ public class Product {
     public void setAmt(int amt) {
         this.amt = amt;
     }
-    public int getCode() {
+    public long getCode() {
 
         return code;
     }
-    public void setCode(int code) {
+    public void setCode(long code) {
         this.code = code;
     }
 }
