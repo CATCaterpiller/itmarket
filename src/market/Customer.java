@@ -30,6 +30,7 @@ public class Customer {
         this.login = login;
         this.password = password;
         this.name = name;
+        this.bonus = 0;
         customerOrders = new ArrayList<Order>();
     }
 

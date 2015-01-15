@@ -5,7 +5,7 @@ import java.util.ArrayList;
 import java.util.GregorianCalendar;
 
 /**
- * Created by Admin on 13.01.2015.
+ * Created by @CAT-Caterpiller on 13.01.2015.
  */
 public class Order {
     private long code;
@@ -17,12 +17,17 @@ public class Order {
 
     public Order() {}
 
-    public Order(long code, Customer buyer) {
+    public Order(long code, Customer buyer, ArrayList<Product> p) {
         this.code = code;
         this.buyer = buyer;
-        buy = new ArrayList<Product>();
+        buy = p;
         date = new GregorianCalendar();
         date.getTime();
+    }
+
+    public Order changeOrder(ArrayList<Product> p) {
+        this.buy = p;
+        return this;
     }
 
 

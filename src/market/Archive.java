@@ -3,7 +3,7 @@ package market;
 import java.util.ArrayList;
 
 /**
- * Created by Admin on 14.01.2015.
+ * Created by @CAT-Caterpiller on 14.01.2015.
  */
 public class Archive {
     private ArrayList<Product> products = new ArrayList<Product>();
@@ -15,19 +15,19 @@ public class Archive {
     private Archive(){}
 
 
-    public Product getProduct(long code) {
+    public Product getProduct(Product p) {
         Product result = null;
         for(Product x : products) {
-            if(x.getCode() == code) result = x;
+            if(x.getName().equals(p.getName()) && x.getPrice()==p.getPrice()) result = x;
 
         }
         return result;
     }
 
-    public Customer getCustomer(long code) {
+    public Customer getCustomer(String login) {
         Customer result = null;
         for(Customer x : customers) {
-            if(x.getCode() == code) result = x;
+            if(x.getLogin().equals(login)) result = x;
         }
         return result;
     }

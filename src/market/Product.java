@@ -25,6 +25,12 @@ public class Product {
         this.code = code;
     }
 
+    public Product(String name, double price, int amt) {
+        this.name = name;
+        this.price = price;
+        this.amt = amt;
+    }
+
     public Product(long code, String name, double prise, int amt) {
         this.code = code;
         this.amt = amt;

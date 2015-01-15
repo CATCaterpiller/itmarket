@@ -1,7 +1,9 @@
 package market;
 
+import java.util.ArrayList;
+
 /**
- * Created by Admin on 14.01.2015.
+ * Created by @CAT-Caterpiller on 14.01.2015.
  */
 public class TestOrder {
     public static void main(String[] args) {
@@ -14,7 +16,7 @@ public class TestOrder {
         Product book4 = new Product(213007, "Pinokkio", 12.78, 4);
         Product book5 = new Product(254007, "Oliver Tvist", 350.15, 2);
 
-        Order order = new Order(357, you);
+        Order order = new Order(357, you, new ArrayList<Product>());
         order.getBuy().add(book1);
         order.getBuy().add(book2);
         order.getBuy().add(book3);
