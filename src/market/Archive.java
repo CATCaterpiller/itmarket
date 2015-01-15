@@ -25,11 +25,12 @@ public class Archive {
     }
 
     public Customer getCustomer(String login) {
-        Customer result = null;
+        Customer c = new Customer();
         for(Customer x : customers) {
-            if(x.getLogin().equals(login)) result = x;
+            if(x.getLogin().equals(login)) c = x;
         }
-        return result;
+        c.setPassword("not");
+        return c;
     }
 
     public Order getOrder(long code) {

@@ -47,11 +47,9 @@ public class Manager {
 
     }
 
-    public Customer getCustomer(String login, String password) {
-        Customer temp = new Customer();
-        temp =  archive.getCustomer(login);
-        if(temp.getPassword().equals(password)) return null;
-        else return temp;
+    public Customer getCustom(String login) {
+        return archive.getCustomer(login);
+
     }
 
     public Order getOrder(long code) {
